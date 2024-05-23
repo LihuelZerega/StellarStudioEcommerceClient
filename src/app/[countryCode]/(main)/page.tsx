@@ -1,11 +1,14 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
+import Hero from "@modules/home/components/hero"
 import BrandBenefits from "@modules/home/components/brand-benefits"
 import FeaturedProducts from "@modules/home/components/featured-products"
-import Hero from "@modules/home/components/hero"
+import SectionProoducts from "@modules/home/components/section-products"
+import CallToAction from "@modules/home/components/call-to-action"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+import AlertService from "@modules/home/components/alert-service"
 
 export const metadata: Metadata = {
   title: "Stellar Studio Ecommerce",
@@ -68,12 +71,15 @@ export default async function Home({
   return (
     <>
       <Hero />
+      <AlertService />
       <BrandBenefits />
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+      <SectionProoducts />
+      <CallToAction />
     </>
   )
 }
