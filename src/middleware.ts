@@ -85,7 +85,7 @@ async function getCountryCode(
  */
 export async function middleware(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
-  const isOnboarding = searchParams.get("onboarding") === "true"
+  const isOnboarding = searchParams.get("onboarding") === "false"
   const cartId = searchParams.get("cart_id")
   const checkoutStep = searchParams.get("step")
   const onboardingCookie = request.cookies.get("_medusa_onboarding")
