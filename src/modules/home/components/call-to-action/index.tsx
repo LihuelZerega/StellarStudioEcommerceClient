@@ -7,7 +7,7 @@ function index() {
         <div className="absolute inset-0">
           <img
             className="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
-            src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg"
+            src="https://res.cloudinary.com/dszjgdktf/image/upload/v1716556194/CallToActionBg_cu5fdi.png"
             alt=""
           />
         </div>
@@ -19,7 +19,7 @@ function index() {
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center md:w-2/3 lg:w-1/2 xl:w-4/7 md:text-left">
             <h2 className="text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
-              ¿Estás listo para despegar con una tienda online?
+              ¿Estás listo para <span className="border-b-2 border-[#a482fb]">despegar</span> con tu <span className="border-b-2 border-[#a482fb]">tienda online</span>?
             </h2>
             <p className="mt-4 text-base text-gray-200">
               ¡No esperes más y lleva tu negocio al mundo digital hoy mismo!
@@ -27,7 +27,7 @@ function index() {
             </p>
 
             <div className="pt-6 md:pt-12">
-              <button className="py-2 px-3 mr-3 text-sm rounded-md bg-white hover:bg-neutral-100 shadow-sm hover:shadow-md">
+              <button className="py-2 px-3 mr-3 text-sm rounded-md text-white bg-[#a482fb] hover:bg-violet-400 shadow-sm hover:shadow-md">
                 Comenzá tu camino
               </button>
               <button className="py-2 px-3 text-sm text-white hover:text-neutral-100 shadow-sm hover:shadow-md">
