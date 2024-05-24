@@ -1,17 +1,16 @@
-import { Github } from "@medusajs/icons"
-import { Button, Heading } from "@medusajs/ui"
+import React from "react"
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle bg-black">
+    <div className="h-[90vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle bg-opacity-30 bg-black">
       <video
         autoPlay
         muted
         loop
-        className="absolute inset-0 w-full h-full object-cover opacity-40 bg-black"
+        className="absolute inset-0 w-full h-full object-cover bg-opacity-90 bg-black"
       >
         <source
-          src="https://res.cloudinary.com/dszjgdktf/video/upload/v1716499118/Clothing_commercial_shot_on_a7sIII_yvr8mx.mp4"
+          src="https://res.cloudinary.com/dszjgdktf/video/upload/v1716550247/Clothing_commercial_shot_on_a7sIII__2_owjabg.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
