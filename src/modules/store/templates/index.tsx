@@ -18,11 +18,14 @@ const StoreTemplate = ({
   const pageNumber = page ? parseInt(page) : 1
 
   return (
-    <div className="flex flex-col small:flex-row small:items-start py-6 content-container" data-testid="category-container">
-      <RefinementList sortBy={sortBy || "created_at"} />
+    <div
+      className="flex flex-col sm:items-start p-6 2xl:mx-auto 2xl:max-w-8xl"
+      data-testid="category-container"
+    >
       <div className="w-full">
-        <div className="mb-8 text-2xl-semi">
-          <h1 data-testid="store-page-title">All products</h1>
+        <div className="flex flex-row items-center justify-between w-full border-b-1 mb-8 text-2xl-semi">
+          <h1 data-testid="store-page-title">Productos</h1>
+          <RefinementList sortBy={sortBy || "created_at"} />
         </div>
         <Suspense fallback={<SkeletonProductGrid />}>
           <PaginatedProducts
