@@ -19,7 +19,7 @@ const StoreTemplate = ({
 
   return (
     <div
-      className="flex flex-col sm:items-start p-6 2xl:mx-auto 2xl:max-w-8xl"
+      className="flex flex-col sm:items-start p-6 2xl:mx-auto 2xl:max-w-8xl overflow-hidden pb-12"
       data-testid="category-container"
     >
       <div className="w-full">
